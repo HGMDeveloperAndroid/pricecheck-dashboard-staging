@@ -1,0 +1,143 @@
+@use '../../sass/variables' as v;
+
+.container {
+    margin: 3rem v.$right-padding 0 v.$left-padding;
+
+    .details {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        .field {
+            width: 12em;
+            margin: 1em 2em 0 0;
+        }
+    }
+
+    .buttonsCon {
+        display: flex;
+        justify-content: flex-end;
+
+        .btnContainer {
+            width: 20em;
+            margin-top: 2em;
+            margin-left: 1em;
+        }
+    }
+
+    .images {
+        display: flex;
+
+        .imageContainer {
+            width: 15rem;
+            margin: 2em 2em 0 0;
+
+            .image {
+                width: 13rem;
+                height: 13rem;
+                margin-bottom: 1em;
+                cursor: pointer;
+            }
+        }
+    }
+    .inputsContainer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1em;
+
+        div:not([class^='react-datepicker']) {
+            width: 20em;
+            &:first-child {
+                margin-right: 2em;
+            }
+        }
+    }
+}
+
+.modalImage {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+}
+
+.modalImageClose {
+    position: absolute;
+    font-size: 2rem;
+    top: -1rem;
+    right: -1rem;
+}
+
+.separator {
+    margin-bottom: 2.5em;
+}
+
+.modal-history-detail-content {
+    max-height: 80%;
+    overflow: auto;
+}
+
+.tableContainer {
+
+    .btnDownload {
+        width: 30%;
+        float: right;
+    }
+
+    .pricesContainer {
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+
+        .price {
+            width: 100%;
+            background-color: v.$white;
+            margin-right: 2rem;
+            padding: 1em;
+            border-radius: 10px;
+            border: 1px solid v.$black;
+            border-top: 10px solid v.$red;
+
+            span {
+                margin: 0 1em;
+            }
+
+            .title {
+                font-size: 1.5em;
+                font-weight: bolder;
+            }
+
+            .priceTitle {
+                font-weight: bolder;
+            }
+
+            table {
+                thead  {
+                    font-size: 1.2em;
+                    font-weight: bolder;
+                    border-bottom: 2px solid v.$black;
+
+                    th {
+                        width: 6em;
+                        padding-bottom: 0.5em;
+                    }
+                }
+
+                tbody tr{
+
+                    &:nth-child(odd) {
+                        background-color: v.$white3;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+.graphContainer {
+    background-color: v.$white;
+    padding: 1em;
+    overflow: scroll;
+    border: 1px solid v.$black;
+    border-radius: 10px;
+}

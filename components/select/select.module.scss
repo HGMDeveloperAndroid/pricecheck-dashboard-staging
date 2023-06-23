@@ -1,0 +1,28 @@
+@use '../../sass/variables' as v;
+
+.select {
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-bottom: 1px solid v.$gray;
+    color: v.$text;
+    margin: 0px;
+
+    &:focus,
+    &:active {
+        outline: none;
+        border-bottom: 2px solid v.$blue;
+    }
+
+    @media (max-width: 1366px) {
+        padding: 0.4em 0.5em;
+    }
+}
+
+.errorMessage {
+    color: v.$action-error;
+}
+
+.label {
+    margin: 0px;
+}

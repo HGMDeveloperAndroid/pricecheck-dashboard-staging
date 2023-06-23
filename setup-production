@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rm -rf .next node_modules
+npm install && npm ci && npm run build
+pm2 stop all  && pm2 delete all
+pm2 start npm --name "next" -- start

@@ -1,0 +1,130 @@
+.field-chain_id {
+    min-width: 30px;
+}
+
+.field-chain {
+    min-width: 300px;
+}
+
+.field-barcode {
+    min-width: 100px;
+}
+
+.filtersContainer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fromDate,
+.toDate {
+    display: inline-block;
+    min-width: 46%;
+    margin-right: 20px;
+}
+
+.chainList {
+    li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.field {
+    min-width: 150px;
+}
+
+.chain-header-container {
+    padding: 3px !important;
+    margin: 0 !important;
+}
+
+.chain-header-table {
+    &,
+    tr,
+    th {
+        border: none !important;
+        min-width: 150px;
+    }
+}
+
+.container-fluid {
+    padding: 40px 30px 0;
+}
+
+.search-button-container {
+    margin: 30px 0;
+
+    button {
+        max-width: 200px;
+    }
+}
+
+.report-table-container {
+    max-width: 100%;
+}
+
+.chain-3b {
+    min-width: auto;
+    background: #FF0400;
+    color: #FFF;
+    font-weight: 600 !important;
+}
+
+.description-col {
+    min-width: 240px;
+}
+
+.modalEditableOptions {
+    max-width: 600px;
+}
+
+[class^='input_inputContainer'] {
+    label {
+        &:not(.inline-label) {
+            margin: none;
+        }
+
+        &.inline-label {
+            float: left;
+            margin-top: 0.4rem;
+            margin-bottom: 0;
+            margin-right: 10px !important;
+        }
+    }
+
+}
+
+.report-table-sticky-header {
+    position: sticky;
+    top: 0;
+    background: #b9bcbf;
+}
+
+.input-file-container {
+    .input-file,
+    .input-file-success,
+    .input-file-error {
+        display: inline-block;
+    }
+
+    .input-file-success {
+        color: green;
+    }
+
+    .input-file-error {
+        color: #FF0400;
+    }
+}
+
+.update-info {
+    button,
+    .update-info-title {
+        display: inline-block;
+    }
+
+    button {
+        width: 150px;
+        margin-left: 20px;
+    }
+}

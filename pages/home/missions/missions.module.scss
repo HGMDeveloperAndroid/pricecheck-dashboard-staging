@@ -1,0 +1,19 @@
+@use '../../../sass/variables' as v;
+
+.container {
+    margin: 3rem v.$left-padding 0 v.$right-padding;
+
+    .addBtnContainer {
+        width: 20em;
+        margin-bottom: 2em;
+    }
+}
+
+.btnsContainer {
+    display: flex;
+    justify-content: flex-end;
+    .btn {
+        width: 10em;
+        margin-left: 1em;
+    }
+}

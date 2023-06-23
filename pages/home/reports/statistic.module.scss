@@ -1,0 +1,62 @@
+@use '../../../sass/variables' as v;
+
+.container-fluid {
+    margin: 40px 0;
+}
+
+.fileUpload {
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+.reportTable {
+    max-width: 100%;
+    overflow-x: scroll;
+
+    td,
+    th {
+        text-align: center;
+    }
+
+    th {
+        border: 3px solid #888;
+        padding: 5px 15px;
+    }
+
+    td {
+        border: 1px solid #888;
+        padding: 5px;
+
+        input {
+            max-width: 150px;
+        }
+    }
+}
+
+.filterOptions{
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    li {
+        flex-grow: 1;
+        list-style: none;
+        margin: 10px;
+        padding: 0;
+
+        p:not[class^='reportDetails'] {
+            display: block;
+            line-height: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        .geoToggle {
+            display: inline-block;
+        }
+    }
+}

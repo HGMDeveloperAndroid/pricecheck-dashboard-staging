@@ -1,0 +1,80 @@
+@use '../../../sass/variables' as v;
+
+.tableComplexContainer {
+    margin: 1rem v.$left-padding;
+}
+
+.checkbox {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadContainer {
+    margin: 2em v.$left-padding;
+    width: 15em;
+    float: right;
+}
+
+.filterCon {
+    display: flex;
+    justify-content: center;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-start;
+
+    .inputCon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .space {
+            height: 5em;
+        }
+
+        .geolocationText{
+            color: #dbc500;
+        }
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    .checkboxesContainer {
+        display: flex;
+        flex-flow: column wrap;
+
+        .checkboxContainer {
+            display: flex;
+            flex-direction: row;
+
+            .checkbox {
+                align-items: baseline;
+                display: flex;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+    .tags {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .tag {
+            background-color: v.$background;
+            margin: 0.5em;
+            padding: 0.5em;
+            border-radius: 10px;
+
+            span {
+                margin-right: 0.5em;
+            }
+        }
+    }

@@ -1,0 +1,43 @@
+@use '../../sass/variables' as v;
+
+.primaryButton {
+    background-color: v.$action-primary;
+    color: v.$white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5em;
+    width: 100%;
+    border: 2px solid #48A858;
+    border-radius: 0.5rem;
+
+    
+}
+
+.primaryButtonError {
+    @extend .primaryButton;
+    background-color: v.$action-error;
+
+}
+.disabled {
+    opacity: 0.50;
+}
+
+.secondaryButton {
+    border: 2px solid v.$action-primary;
+    color: v.$action-primary;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.secondaryButtonError {
+    @extend .secondaryButton;
+    color: v.$action-error;
+    border-color: v.$action-error;
+
+}

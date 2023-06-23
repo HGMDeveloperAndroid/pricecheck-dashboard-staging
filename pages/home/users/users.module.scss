@@ -1,0 +1,201 @@
+@use '../../../sass/variables' as v;
+
+$table-padding: 0.5em;
+
+.headContainer {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 2vh v.$right-padding 2vh v.$left-padding;
+
+    .leftContainer {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .rightContainer {
+        display: flex;
+        justify-content: flex-end;
+        // width: 50%;
+
+        .label {
+            display: flex;
+            margin-right: 2em;
+            svg:first-child {
+                margin-left: 1em;
+                transform: translateY(0.3em);
+            }
+            .message {
+                position: absolute;
+                top: 1em;
+                z-index: 100;
+                margin-left: -8rem;
+                width: 10rem;
+                font-size: 0.7rem;
+                box-shadow: 0px 0px 2px v.$gray;
+                background-color: #c4c3c3;
+                padding: 0 1em 0 1em;
+                text-align: center;
+                display: none;
+
+                p {
+                    text-overflow: clip;
+                }
+
+                svg {
+                    position: absolute;
+                    right: 0;
+                    font-size: 3rem;
+                    margin-top: -0.5em;
+                    color: #c4c3c3;
+                }
+            }
+
+            &:hover {
+                .message {
+                    display: block;
+                }
+            }
+        }
+
+        .inputContainer {
+            width: 15em;
+            margin: 0 1em;
+        }
+
+        .buttonContainer {
+            width: 15em;
+        }
+    }
+}
+
+.userListContainer {
+    margin: 1em v.$left-padding 0 v.$right-padding;
+    width: calc(100vw - #{v.$left-padding} - #{v.$right-padding});
+    background-color: v.$white2;
+
+    .header {
+        width: 100%;
+        display: flex;
+        font-weight: bolder;
+        padding: 1em $table-padding;
+        font-size: 1.1em;
+
+        .options svg {
+            color: v.$blue;
+
+            &:last-child {
+                color: v.$action-error;
+            }
+        }
+    }
+
+    .body {
+        width: 100%;
+
+        .row {
+            width: 100%;
+            display: flex;
+            padding: $table-padding;
+
+            &:nth-child(odd) {
+                background-color: v.$white3;
+            }
+        }
+    }
+
+    .footer {
+        text-align: center;
+        width: 100%;
+        font-weight: bold;
+        padding: 1em $table-padding;
+
+        a {
+            color: v.$text;
+        }
+    }
+
+    .name {
+        width: 20%;
+    }
+
+    .userName {
+        width: 12%;
+    }
+
+    .email {
+        width: 20%;
+    }
+
+    .numEmpleado {
+        width: 12%;
+    }
+
+    .numCelular {
+        width: 12%;
+    }
+
+    .rol {
+        width: 12%;
+    }
+
+    .options {
+        width: 12%;
+
+        svg {
+            margin-right: 1em;
+            cursor: pointer;
+
+            &:hover {
+                color: v.$blue;
+                &:last-child {
+                    color: v.$action-error;
+                }
+            }
+        }
+    }
+}
+
+.modalHeader {
+    text-align: center;
+}
+
+.modalBody {
+    display: flex;
+    .half {
+        width: 40%;
+        margin: 5%;
+
+        .inputContainer {
+            margin: 1em;
+        }
+    }
+
+}
+
+.modalBodyTags {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 80%;
+}
+
+.modalFooter {
+    display: flex;
+    .btnContainer {
+        margin: auto;
+        width: 35%;
+    }
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+    margin: 1em;
+}
+
+.tableContainer {
+    margin-top: 2rem;
+    margin-left: v.$left-padding;
+    margin-right: v.$right-padding;
+}

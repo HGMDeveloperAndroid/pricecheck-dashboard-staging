@@ -1,0 +1,87 @@
+@use '../../sass/variables' as v;
+
+.container {
+    margin: 3rem v.$right-padding 0 v.$left-padding;
+
+    .details {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        .field {
+            width: 13em;
+            margin: 1em 1.5em 0 0;
+        }
+        .fieldScaned {
+            width: 13em;
+            margin: 17px 1.5em 0 0;
+        }
+        .fieldReviewed {
+            width: 13em;
+            margin: 14px 1.5em 0 0;
+        }
+        .fieldSelect {
+            width: 13em;
+            margin: 14px 1.5em 0 0;
+            width: 15em;
+        }
+    }
+
+    .buttonsCon {
+        display: flex;
+        justify-content: center;
+        
+        .btnContainer {
+            width: 20em;
+            margin-top: 2em;
+            margin-left: 1em;
+        }
+    }
+    .buttonsConDisabled {
+        display: flex;
+        justify-content: center;
+        pointer-events: none;
+        .btnContainer {
+            width: 20em;
+            margin-top: 2em;
+            margin-left: 1em;
+        }
+    }
+
+    .images {
+        display: flex;
+
+        .imageContainer {
+            width: 15rem;
+            margin: 2em 2em 0 0;
+
+            .image {
+                width: 13rem;
+                height: 13rem;
+                margin-bottom: 1em;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.modalImage {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+}
+
+.modalImageClose {
+    position: absolute;
+    font-size: 2rem;
+    top: -1rem;
+    right: -1rem;
+}
+
+.separator {
+    margin-bottom: 2.5em;
+}
+
+.disabledButton {
+    color: #d3d3d3;
+}

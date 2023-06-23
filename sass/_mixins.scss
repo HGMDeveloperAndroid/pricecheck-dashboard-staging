@@ -1,0 +1,19 @@
+@use './variables' as v;
+
+@mixin cellphone {
+    @media (max-width: #{v.$sm - 1px} ) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: v.$sm) and (max-width: #{v.$lg - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$lg) {
+        @content;
+    }
+}

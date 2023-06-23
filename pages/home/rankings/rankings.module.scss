@@ -1,0 +1,5 @@
+@use '../../../sass/variables' as v;
+
+.container {
+    margin: 2rem v.$left-padding 0px v.$right-padding;
+}

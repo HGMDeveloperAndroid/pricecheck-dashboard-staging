@@ -1,0 +1,27 @@
+@use '../../sass/variables' as v;
+
+.tabBar {
+    padding: 1.5rem 0;
+    width: 200%;
+
+    li {
+        display: flex;
+        margin: 0px 2rem 0px 0px;
+        font-size: 1.5em;
+        background-color: v.$white;
+        opacity: 0.4;
+        color: v.$gray;
+        padding: 0.2em;
+        border: 2px solid v.$gray;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+
+        &.selected {
+            color: v.$action-primary;
+            border-color: v.$action-primary;
+            opacity: 1;
+        }
+    }
+}

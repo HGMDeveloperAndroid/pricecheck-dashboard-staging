@@ -1,0 +1,31 @@
+@use '../../sass/variables' as v;
+
+.container {
+
+  margin: 2em v.$right-padding 2em v.$left-padding;
+  
+  .reportTypeItem {
+    margin: 1em 2em;
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    min-width: 150px;
+    background: white;
+    border-radius: 8px;
+    align-items: center;
+    flex-direction: column;
+    max-width: fit-content;
+    justify-content: center;
+
+    .label {
+      margin-bottom: 0;
+    }
+
+    .icon {
+      color: v.$action-primary;
+      margin-bottom: 10px;
+      width: 15px;
+      height: auto;
+    }
+  }
+}

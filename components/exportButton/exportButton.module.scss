@@ -1,0 +1,17 @@
+@use '../../sass/variables' as v;
+
+.secondaryButton {
+    border: 2px solid v.$action-primary;
+    color: v.$action-primary;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 0.5rem;
+    
+    a{
+        color:v.$action-primary;
+    }
+}

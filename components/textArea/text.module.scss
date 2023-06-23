@@ -1,0 +1,33 @@
+@use '../../sass/variables' as v;
+
+.textAreaContainer {
+    label {
+        margin: none;
+    }
+
+    .textAreaLineContainer {
+        margin: none;
+        border-bottom: 1px solid v.$gray;
+        color: v.$text;
+        display: flex;
+        align-items: center;
+
+        .textArea {
+            border: none;
+            min-width: 95%;
+            max-width: 100%;
+            padding-bottom: 2em;
+            padding-left: 0.3em;
+            overflow: hidden;
+            &:focus,
+            &:active {
+                outline: none;
+                border-bottom: 2px solid v.$blue;
+            }
+        }
+    }
+
+    .errorMessage {
+        color: v.$action-error;
+    }
+}

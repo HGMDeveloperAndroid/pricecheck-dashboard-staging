@@ -1,0 +1,16 @@
+@use '../../sass/variables' as v;
+
+.title {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    // text-align: center;
+    font-size: 1.4em;
+}
+
+.input {
+    margin-bottom: 2.5em;
+}
+
+.errorMessage {
+    color: v.$action-error;
+}

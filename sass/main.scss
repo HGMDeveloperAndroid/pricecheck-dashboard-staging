@@ -1,0 +1,75 @@
+@use './variables' as v;
+
+@import './react-datepicker.scss';
+@import './autocomplete.scss';
+@import './table-complex.scss';
+@import './themes/darkmode.theme.scss';
+@import './statistics.report.scss';
+
+body {
+    background-color: v.$background;
+    color: v.$text;
+    // font-family: 'Raleway', sans-serif;
+    // font-family: 'Lato', sans-serif;
+    font-family: "Catamaran", sans-serif;
+    font-size: 0.9em;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+    }
+
+    .width10 {
+        width: 10%;
+    }
+
+    .width15 {
+        width: 15%;
+    }
+
+    .width20 {
+        width: 20%;
+    }
+
+    .width30 {
+        width: 30%;
+    }
+
+    .width40 {
+        width: 40%;
+    }
+
+    .width45 {
+        width: 45%;
+    }
+
+    .width50 {
+        width: 50%;
+    }
+
+    .width70 {
+        width: 70%;
+    }
+
+    .width80 {
+        width: 80%;
+    }
+
+    .width100 {
+        width: 100%;
+    }
+}
+
+#__next-prerender-indicator {
+    display: none;
+}
+
+.input-error {
+    border: 1px solid v.$red !important;
+    color: v.$red !important;
+}
+
+[class^="select_errorMessage"] {
+    color: v.$red !important;
+}

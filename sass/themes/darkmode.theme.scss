@@ -1,0 +1,179 @@
+@use '../variables' as v;
+
+.darkmode {
+    $color: v.$medium-gray;
+    $block-bg-color: v.$woodsmoke;
+
+    $link-color: v.$medium-gray;
+    $link-hover-color: v.$cinnabar;
+
+    color: $color !important;
+    background-color: $block-bg-color !important;
+
+    &-font {
+        &,
+        & * {
+            color: $color !important;
+        }
+    }
+
+    &-block-woodsmoke {
+        background: darken($block-bg-color, 3%) !important;
+
+        @extend .darkmode-font;
+    }
+
+    &-link {
+        color: $color !important;
+
+        &:hover {
+            color: $link-hover-color !important;
+        }
+    }
+
+    // LINKS
+    & a {
+        @extend .darkmode-link;
+    }
+
+    [class^='home_messageNoElementsContainer'],
+    [class^='header_header'],
+    [class^='header_optionsList'],
+    [class^='header_leftContainer'],
+    [class^='header_dropdown'],
+    [class^='advanced-search_container'],
+    [class^="input_input"],
+    [class^="advanced-search_inputSearch"],
+    [class^='modal_modal_'],
+    [class^="select_select"],
+    [class^="react-datepicker-popper"] {
+        @extend .darkmode-block-woodsmoke;
+
+        &,
+        & a {
+            @extend .darkmode-link;
+        }
+    }
+
+    [class^="home_dataContainer"],
+    [class^="home_historyContainer"],
+    [class^="home_productDataContainerCompleted"],
+    [class^="home_productDataContainer"],
+    [class^="home_scannerDataContainer"],
+    [class^="validatorsTab_statsContainer"] {
+        &,
+        & > div {
+            @extend .darkmode-block-woodsmoke;
+        }
+    }
+
+    [class^="home_historyContainer"]:not(.productHistoryContainer) {
+        [class^="square_square"] {
+            color: $color !important;
+            background: $block-bg-color !important;
+        }
+    }
+
+    [class^='optionList_tabBar'] {
+        & [class^='optionList_selected'] {
+            background: v.$lucky-gray !important;
+        }
+
+        li {
+            background: v.$dark-charcoal !important;
+        }
+    }
+    .table,
+    [class^='table_tableComplex'] {
+        background: lighten($block-bg-color, 5%) !important;
+
+        th {
+            background: darken($block-bg-color, 3%) !important;
+        }
+
+        tr:nth-child(odd) {
+            background: lighten($block-bg-color, 8%) !important;
+        }
+    }
+
+    [class^="modal_dialogModal"] {
+        @extend .darkmode-block-woodsmoke;
+    }
+
+    [class^="modal_dialogModalContainer"],
+    [class^="modal_modalContainer"] {
+        background-color: rgba($block-bg-color, 0.9) !important;
+    }
+
+    [class^="input_blackInput"] {
+        color: $color !important;
+        background: $block-bg-color !important;
+    }
+    [class^="btn-theme"] {
+        color: white !important;
+    }
+    [class^="btn"] {
+        color: white!important;
+    }
+    [class^="home_capturesList"] {
+        p {
+            color: $color !important;
+            background: $block-bg-color !important;
+            
+            &[class^="home_withProduct"] {
+                color: $link-hover-color !important;
+                background: darken($block-bg-color, 3%) !important;
+            }
+            
+            &.current-product{
+                background: $link-hover-color !important;
+                color: red;
+            }
+        }
+    }
+
+    [class^="input_tag"],
+    [class^="productDetails_price"],
+    [class^="productCompareDetails_graphContainer"],
+    [class^="productDetails_graphContainer"] {
+        @extend .darkmode-block-woodsmoke;
+    }
+
+    [class^="detailsContainer_details"] {
+        @extend .darkmode-block-woodsmoke;
+    }
+
+    [class^="react-datepicker-popper"] {
+        .react-datepicker__header,
+        .react-datepicker {
+            @extend .darkmode-block-woodsmoke;
+        }
+
+        .react-datepicker__day--keyboard-selected {
+            background: darken(v.$cinnabar, 3%) !important;
+        }
+
+        .react-datepicker__day {
+            &:hover {
+                background: lighten($block-bg-color, 3%) !important;
+            }
+        }
+    }
+    .product-report_divContent__2U1XK {
+        background: $block-bg-color !important;
+    }
+
+    .card_border-product__3pKKS {
+        color:  $color !important;
+    }
+    .product-report_wrapperSelected__1Wl3u {
+        color: $block-bg-color !important;
+    }
+    .product-report_tags__OG2vn {
+        border: 2px solid $link-hover-color !important;
+        color: $block-bg-color !important;
+    }
+    .product-report_btnToggle__1IR7O {
+        color: $color !important; 
+      }
+}

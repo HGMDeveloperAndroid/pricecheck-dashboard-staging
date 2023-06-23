@@ -1,0 +1,48 @@
+@use '../../sass/variables' as v;
+
+
+.loaderContainer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    .Loader {
+        width: 30%;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    .Loader > span {
+        display: inline-block;
+        background-color: v.$dark-red;
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        margin: 0 8px;
+        transform: translate3d(0);
+        animation: bounce 0.6s infinite alternate;
+    }
+
+    .Loader > span:nth-child(2) {
+        background-color: v.$light-red;
+        animation-delay: 0.2s;
+    }
+
+    .Loader > span:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    @keyframes bounce {
+        to {
+            width: 16px;
+            height: 16px;
+            transform: translate3d(0, -16px, 0);
+        }
+    }
+}
+

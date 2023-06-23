@@ -1,0 +1,125 @@
+.navbar {
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown2 {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    
+  }
+  
+  .dropdown .dropbtn  {
+    width: 100%;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #333;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    svg{
+        float: right;
+    }
+  }
+  .dropbtn2  {
+    width: 100%;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgb(3, 0, 0);
+    padding: 5px 0px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    svg{
+        float: right;
+    }
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+      color: white;
+      font-weight: bold;
+    background-color: #48A858;
+  }
+  .dropbtn2:hover {
+    font-weight: bold;
+    border: 3px solid  #48A858;
+  }
+  
+  .dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown_content2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown_content a {
+    float: none;
+    color: black;
+    padding: 5px 10px 5px 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown_content2 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown_content a:hover {
+    background-color: transparent;
+  }
+  .dropdown_content2 a:hover {
+    background-color: #48A858;
+  }
+  
+  .dropdown:hover .dropdown_content {
+    display: block;
+  }
+  .dropdown_content .dropdown2:hover .dropdown_content2 {
+    display: inline-flex;
+  }
+  .btnConsulta{
+    font-size: 1.5em;
+    margin: 0px 3px 0px 3px;
+    background: transparent;
+    border: none;
+    &:hover{
+      font-size: 1.55em;
+      border: 3px solid #48A858;
+    }
+    svg{
+        color: #48A858;
+    }
+  }

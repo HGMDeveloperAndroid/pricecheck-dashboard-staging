@@ -1,0 +1,48 @@
+.modalHeader {
+    text-align: center;
+}
+
+.modalBody {
+    display: flex;
+    flex-wrap: wrap;
+
+    .half {
+        width: 40%;
+        margin: 5%;
+
+        .inputContainer {
+            margin: 1em;
+        }
+    }
+
+    .serverError {
+        width: 100%;
+        margin-top: -1em;
+        font-size: 1.2em;
+        margin-bottom: 1em;
+        padding: 0 4rem;
+
+        .errorBad {
+            color: red;
+        }
+
+        .errorGood {
+            color: green;
+        }
+    }
+}
+
+.modalBodyTags {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 80%;
+}
+
+.modalFooter {
+    display: flex;
+    .btnContainer {
+        margin: auto;
+        width: 35%;
+    }
+}

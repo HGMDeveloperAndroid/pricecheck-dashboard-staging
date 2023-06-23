@@ -1,0 +1,9 @@
+@use '../../sass/variables' as v;
+
+.checkbox {
+    margin-right: 5px;
+}
+
+.disabled {
+    color: mix(v.$medium-gray, black, 60%);
+}

@@ -1,0 +1,20 @@
+@use '../../sass/variables' as v;
+
+.container {
+    background-color: v.$white;
+    width: 10rem;
+    height: 5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5em;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px v.$black;
+    transition: box-shadow 0.5s;
+    font-size: 1.1em;
+    margin-right: 1rem;
+
+    &:hover {
+        box-shadow: 0px 0px 4px v.$black;
+    }
+
+}

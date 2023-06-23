@@ -1,0 +1,16 @@
+@use '../../sass/variables' as v;
+
+.container {
+
+    .title {
+        font-size: 1.2em;   
+        text-align: left;
+    }
+
+    .details {
+        background-color: v.$white;
+        padding: 1em;
+        border: 1px solid v.$gray;
+        border-radius: 5px;
+    }
+}

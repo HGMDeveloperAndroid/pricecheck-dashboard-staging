@@ -1,0 +1,84 @@
+@use '../../../sass/variables' as v;
+
+.filters {
+    display: flex;
+    height: 404px;
+    margin-top: 50px;
+
+    .leftContainer {
+        width: 40%;
+        padding: 15px;
+    }
+
+    .rightContainer {
+        width: 60%;
+        padding: 15px;
+
+        .graphBlock {
+            display: flex;
+            height: 377px;
+
+            .resume,
+            .graph {
+                display: inline-block;
+            }
+
+            .resume {
+                width: 20%;
+                height: 377px;
+            }
+            .graph {
+                width: 80%;
+                height: 377px;
+
+                .scannerResume {
+                    width: 100%;
+                    height: 107px;
+                }
+            }
+        }
+    }
+
+    .filterOptions{
+        display: flex;
+        padding: 0;
+        margin: 0;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        li {
+            flex-grow: 1;
+            list-style: none;
+            margin: 10px;
+            padding: 0;
+
+            p:not[class^='reportDetails'] {
+                display: block;
+                line-height: 0;
+                padding: 0;
+                margin: 0;
+            }
+
+            .geoToggle {
+                display: inline-block;
+            }
+        }
+    }
+
+    .info {
+        &,
+        li {
+            margin: 0;
+        }
+
+        li {
+            border-bottom: 1px solid #555;
+        }
+
+        list-style: none;
+        padding: 10px;
+    }
+
+}

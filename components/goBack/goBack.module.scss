@@ -1,0 +1,10 @@
+@use '../../sass/variables' as v;
+
+.goBackContainer {
+    cursor: pointer;
+    font-size: 2em;
+
+    .icon {
+        color: v.$action-primary;
+    }
+}

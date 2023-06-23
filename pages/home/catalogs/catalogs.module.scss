@@ -1,0 +1,16 @@
+@use '../../../sass/variables' as v;
+
+.title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-top: 2em;
+    margin-left: v.$left-padding;
+    margin-right: v.$right-padding;
+}
+
+.catalogsContainer {
+    margin-top: 2em;
+    margin-left: v.$left-padding;
+    margin-right: v.$right-padding;
+    display: flex;
+}

@@ -1,0 +1,69 @@
+@use '../../sass/variables' as v;
+
+.graphPage {
+    .graphContainer {
+        margin-top: 1em;
+        background-color: v.$white;
+        padding: 1em;
+        overflow: scroll;
+        border: 1px solid v.$black;
+        border-radius: 10px;
+    }
+
+    .inputsContainer {
+        display: flex;
+        justify-content: center;
+
+        div:not([class^='react-datepicker']) {
+            width: 20em;
+            margin-right: 2em;
+        }
+    }
+}
+
+.pricesContainer {
+    display: flex;
+    width: 200%;
+
+    .price {
+        background-color: v.$white;
+        margin-right: 2rem;
+        padding: 1em;
+        border-radius: 10px;
+        border: 1px solid v.$black;
+        border-top: 10px solid v.$red;
+
+        span {
+            margin: 0 1em;
+        }
+
+        .title {
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+
+        .priceTitle {
+            font-weight: bolder;
+        }
+
+        table {
+            margin: auto;
+            thead {
+                font-size: 1.2em;
+                font-weight: bolder;
+                border-bottom: 2px solid v.$black;
+
+                th {
+                    width: 6em;
+                    padding-bottom: 0.5em;
+                }
+            }
+
+            tbody tr {
+                &:nth-child(odd) {
+                    background-color: v.$white3;
+                }
+            }
+        }
+    }
+}

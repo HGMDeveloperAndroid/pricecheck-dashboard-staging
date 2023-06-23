@@ -1,0 +1,50 @@
+// Colors used
+$green: #48A858;
+$red: #DE4747;
+$color-red: #ff0000;
+$dark-red: #6D1515;
+$light-grey: #E6EAEE;
+$blue: #71A4E4;
+$light-red: #F55D5D;
+$white: #FFFFFF;
+$black: #000000;
+$white2: #F5F6F8;
+$white3: #F0F1F5;
+$orange: #F4B201;
+$medium-gray: #D2D6DE;
+$cod-gray: rgb(24, 26, 27);
+$woodsmoke: #181A1B;
+$flint: #70685C;
+$cloudy: #B2ABA1;
+$cinnabar: #E04833;
+
+// DARK THEME
+$gray: #565656;
+$dark-blue: #3F4D5E;
+$outer-space: #2E3234;
+$dark-charcoal: #333;
+$lucky-gray: #777;
+$stone-cold-gray: #555;
+$dreamless-sleep: #111;
+
+// Colors by use
+$background: $medium-gray;
+$action-primary: $green;
+$action-error: $red;
+$text: $gray;
+$text-secondary: $dark-red;
+
+// Content padding for all site desktop and tablet
+
+$left-padding: 5rem;
+$right-padding: 5rem;
+
+// Content padding for all site cellphone
+$left-padding-sm: 1rem;
+$right-padding-sm: 1rem;
+
+// Devices sizes for media queries
+$xs: 576px;
+$sm: 768px;
+$md: 992pX;
+$lg: 1200px;

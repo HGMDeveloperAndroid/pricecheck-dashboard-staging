@@ -1,0 +1,68 @@
+@use '../../../sass/variables' as v;
+
+.divContent {
+  background: white;
+  color: v.$text;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.icon {
+  width: 8em;
+  height: 8em;
+}
+.text-center {
+  text-align: center;
+}
+.items-center {
+  place-items: center;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+.tags {
+  display: flex;
+  border: 1px solid #000;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .tag {
+      background-color: v.$background;
+      margin: 0.5em;
+      padding: 0.5em;
+      border-radius: 10px;
+
+      span {
+          margin-right: 0.5em;
+      }
+  }
+}
+
+.rotate {
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+.rotate-down{
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
+.btnToggle {
+  padding: 0;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapperSelected {
+  height: 6em;
+  overflow-y: scroll;
+  border-top: 1px solid #000;
+  background-color: v.$background;
+}

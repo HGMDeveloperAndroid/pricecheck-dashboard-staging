@@ -1,0 +1,159 @@
+@use '../../sass/variables' as v;
+
+.header {
+    padding: 0.5em v.$right-padding 0.5em v.$left-padding;
+    background-color: v.$white;
+    // box-shadow: 3px 0px 10px v.$gray;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.5s;
+
+    .optionsList {
+        list-style: none;
+        // margin: 0 5em 0 4em;
+        margin-top: 0.5em;
+        margin-bottom: 0.3em;
+
+        .option {
+            display: inline-block;
+            margin: 1em 2em 0em 2em;
+            color: v.$text;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            a {
+                color: v.$text;
+                text-decoration: none;
+
+                &:hover {
+                    color: v.$action-error;
+                }
+            }
+
+            &:hover {
+                .dropdown {
+                    display: block;
+                }
+            }
+
+            .dropdown {
+                margin-left: -2em;
+            }
+        }
+
+        .optionDisabled {
+            pointer-events: none;
+            display: inline-block;
+            margin: 1em 2em 0em 2em;
+            color: #d3d3d3;
+
+            font-weight: bold;
+            text-transform: uppercase;
+            a {
+                color: #d3d3d3;
+                text-decoration: none;
+                &:hover {
+                    color: v.$action-error;
+
+                    .dropdown {
+                        display: block;
+                    }
+                }
+            }
+
+            .dropdown {
+                margin-left: -2em;
+            }
+        }
+    }
+    .leftContainer {
+        display: flex;
+
+        .configuration {
+            margin: 1em;
+            cursor: pointer;
+
+            &:hover {
+                .dropdown {
+                    display: block;
+                    margin-left: -4.8em;
+                }
+            }
+        }
+
+        .profile {
+            margin: 1em 0 1em 1em;
+            cursor: pointer;
+
+            &:hover {
+                .dropdown {
+                    display: block;
+                }
+            }
+
+            .defaultImg {
+                border: 1px solid v.$gray;
+                display: inline;
+                padding: 0.5em 0.6em 0.5em 0.6em;
+                border-radius: 50%;
+                font-size: 1.2em;
+            }
+
+            .profilePicture {
+                display: inline;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+
+            span {
+                margin-left: 0.5em;
+                overflow-x: hidden;
+            }
+        }
+    }
+
+    .dropdown {
+        background-color: v.$background;
+        position: absolute;
+        list-style: none;
+        padding: 0 0.5em 0 0.5em;
+        width: 10em;
+        border-top: 5px solid v.$action-error;
+        box-shadow: 0px 3px 5px v.$gray;
+        display: none;
+
+        .triangle {
+            position: absolute;
+            left: calc(50% - 12px);
+            width: 24px;
+            height: 24px;
+            top: -10px;
+            color: v.$action-error;
+        }
+
+        li,
+        li a {
+            color: v.$text;
+            text-decoration: none;
+            border-bottom: 1px solid v.$gray;
+            text-transform: none;
+            padding: 0.7em 0px 0.5em 0px;
+            font-weight: bold;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                color: v.$action-error;
+            }
+        }
+    }
+}

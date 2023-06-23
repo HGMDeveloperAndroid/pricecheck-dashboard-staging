@@ -1,0 +1,30 @@
+@use '../../sass/variables' as v;
+
+.tableContainer {
+    margin-top: 1em;
+}
+
+.statsContainer {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+
+    div {
+        background-color: v.$white;
+        width: 40%;
+        // box-shadow: 0px 0px 5px v.$gray;
+        border: 1px solid v.$black;
+        border-radius: 5px;
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: bold;
+            margin: 10px;
+
+            &:last-child {
+                font-size: 1.8em;
+            }
+        }
+    }
+}

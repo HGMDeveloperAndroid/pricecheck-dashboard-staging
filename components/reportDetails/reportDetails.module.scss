@@ -1,0 +1,63 @@
+@use '../../sass/variables'as v;
+
+.geolocalizationContainer {
+  .reference {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 400px;
+  }
+
+  .errorMsg {
+    color: v.$red !important;
+    font-size: 18px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+
+  .pointContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .input {
+      width: calc(50% - 10px);
+    }
+  }
+
+  .actions {
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: left;
+
+    .btnContainer {
+      margin-right: 10px;
+    }
+  }
+
+  .btnSm {
+    height: 40px;
+    float: right;
+    width: 100px;
+
+    &.bgWhite {
+      background-color: white;
+    }
+  }
+
+  .modalButtonsContainer {
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+  }
+}

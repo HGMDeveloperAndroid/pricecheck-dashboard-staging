@@ -1,0 +1,125 @@
+@use '../../sass/variables' as v;
+
+$table-padding: 0.5em;
+
+.table {
+    width: 100%;
+    background-color: v.$white;
+
+    thead th {
+        font-size: 1.1em;
+        font-weight: bolder;
+        padding: 1em $table-padding;
+        text-align: center;
+    }
+
+    tbody {
+        tr:nth-child(odd) {
+            background-color: v.$white3;
+        }
+
+        td {
+            padding: $table-padding;
+            text-align: center;
+        }
+    }
+
+    .footer {
+        font-weight: bold;
+        padding: 1em $table-padding;
+        text-align: center;
+        width: 100%;
+
+        a {
+            color: v.$text;
+            font-size: 1.5em;
+            margin: 0px 1em 0px 1em;
+        }
+    }
+
+    .actionIcon {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+}
+
+.tableComplex {
+    background-color: v.$white;
+    min-width: 100%;
+    overflow: scroll;
+    position: relative;
+
+    table {
+        thead tr th {
+            font-weight: bold;
+            padding: 1em;
+            text-align: center;
+
+            .hide {
+                color: v.$action-primary;
+                font-size: 1.2em;
+                margin-left: 0.5em;
+                cursor: pointer;
+            }
+        }
+
+        tbody tr {
+            td {
+                padding: 0.2em 1em;
+                text-align: center;
+
+                .idClass {
+                    color: v.$action-primary;
+                    cursor: pointer;
+                    font-size: 1.2em;
+                    text-decoration: underline;
+                }
+
+                .isPromo {
+                    color: v.$orange;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                    margin-left: 1em;
+                }
+            }
+
+            &:nth-child(odd) {
+                background-color: v.$white3;
+            }
+        }
+    }
+
+    .footer {
+        font-weight: bold;
+        padding: 1em $table-padding;
+        text-align: center;
+        width: 100%;
+
+        a {
+            color: v.$text;
+            font-size: 1.5em;
+            margin: 0px 1em 0px 1em;
+        }
+    }
+}
+
+.modalImage {
+    height: auto;
+    max-height: 90vh;
+    width: 100%;
+}
+
+.modalImageClose {
+    font-size: 2rem;
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+}
+
+.sortIcon {
+    color: v.$action-primary;
+    cursor: pointer;
+    font-size: 2em;
+    margin-left: 0.5em;
+    position: absolute;
+}

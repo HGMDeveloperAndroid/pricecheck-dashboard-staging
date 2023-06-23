@@ -1,0 +1,49 @@
+@use '../../../../sass/variables' as v;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: v.$left-padding;
+    padding-right: v.$right-padding;
+    margin-top: 2em;
+
+    .leftContainer {
+        margin-top: 0.5rem;
+        display: flex;
+
+        .inputContainer, .buttonContainer {
+            width: 15rem;
+        }
+        
+        .separator {
+            width: 2rem;
+        } 
+    }
+
+    .titleContainer {
+        h2 {
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+
+            .icon {
+                background-color: v.$white;
+                padding: 1rem;
+                margin-right: 0.5em;
+                border-radius: 50%;
+                color: #dbc500;
+            }
+        }
+    }
+    
+    .separator {
+        height: 2em;
+    }
+}
+
+.tableContainer {
+    
+    margin-left: v.$left-padding;
+    margin-right: v.$right-padding;
+}
