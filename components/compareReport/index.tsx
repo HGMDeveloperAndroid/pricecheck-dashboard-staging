@@ -6,7 +6,7 @@ import { getI18nLabel } from '../../i18n';
 import { getDarkTheme, getHeader, getTheme, IsCustomTheme, getLocale } from '../../utils/session-management';
 import { buildTheme } from '../../utils/theme';
 import GraphReportTabCompare from '../reportGraphCompare'
-import SmallOptionList from '../smallOptionList /OptionList'
+import SmallOptionList from '../smallOptionList/OptionList'
 
 const ProductsCompareComponent = (props) => {
   const { barcodes } = props;
